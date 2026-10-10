@@ -1,0 +1,12 @@
+
+#!/bin/bash
+
+check_net() {
+    if ping -c 1 google.com >/dev/null 2>&1; then
+        echo "Internet Connected"
+    else
+        echo "Internet Not Connected"
+    fi
+}
+
+check_net
